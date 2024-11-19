@@ -36,6 +36,7 @@ class DialogBox extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
+                Text("create new branch"),
                 MyButton(
                   text: "Save",
                   onPressed: onSave,
