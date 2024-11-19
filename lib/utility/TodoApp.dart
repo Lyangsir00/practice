@@ -4,12 +4,12 @@ import 'package:flutter_slidable/flutter_slidable.dart';
 class Todoapp extends StatelessWidget {
   Todoapp(
       {super.key,
-      required this.deleteFunction,
-      required this.taskName,
-      required this.taskComplete,
-      required this.onChanged});
-  final String taskName;
-  final bool taskComplete;
+      this.deleteFunction,
+      this.taskName,
+      this.taskComplete,
+      this.onChanged});
+  final String? taskName;
+  final bool? taskComplete;
   Function(bool?)? onChanged;
   Function(BuildContext)? deleteFunction;
 
